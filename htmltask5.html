@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Task 5</title>
+    <style>
+        h1 {
+            text-align: center;
+            color: blue;
+        }
+        table,td,tr {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        table {
+            margin-left: auto;
+            margin-right: auto;
+            width: 600px;
+        }
+        .cla {
+            width: 465px;
+        }
+        td {
+            text-align: center;
+        }
+        #address {
+            width: 464px;
+            height: 110px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Registration form</h1>
+    <div>
+        <form>
+            <table>
+                <tr>
+                    <td>
+                        <label for="firstName"><b>First Name</b></label>
+                    </td>
+                    <td>
+                        <input type="text" id="firstName" class="cla">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="lastName"><b>Last Name</b></label>
+                    </td>
+                    <td>
+                        <input type="text" id="lastName" class="cla">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="email"><b>Email</b></label>
+                    </td>
+                    <td>
+                        <input type="text" id="email" class="cla">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="password"><b>Password</b></label>
+                    </td>
+                    <td>
+                        <input type="password" id="password" class="cla">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="re-enterpassword"><b>Re-enter Password</b></label>
+                    </td>
+                    <td>
+                        <input type="password" id="re-enterpassword" class="cla">
+                    </td>
+                </tr>
+                <tr>
+                    <td rowspan="2">
+                        <label for="gender"><b>Gender :</b></label>
+                    </td>
+                    <td style="text-align: left">
+                        <input type="radio" name="Gender" id="gender">
+                        <label>Male</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: left">
+                        <input type="radio" name="Gender" id="gender">
+                        <label>Female</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="age"><b>Age:</b></label>
+                    </td>
+                    <td>
+                        <input type="number" id="age" class="cla"> 
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="phoneNumber"><b>Phone Number</b></label>
+                    </td>
+                    <td>
+                        <input type="number" id="phoneNumber" class="cla">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="address"><b>Address</b></label>
+                    </td>
+                    <td>
+                        <textarea id="address" cols="35" rows=""></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="state"><b>State</b></label>
+                    </td>
+                    <td>
+                        <input type="text" id="state" class="cla">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="country"><b>Country</b></label>
+                    </td>
+                    <td style="text-align: left;">
+                        <select id="country">
+                            <option value="">Choose your country</option>
+                            <option value="australia">Australia</option>
+                            <option value="england">England</option>
+                            <option value="india">India</option>
+                            <option value="newzealand">Newzealand</option>
+                            <option value="southafrica">Southafrica</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="lang"><b>Languages known</b></label>
+                    </td>
+                    <td style="text-align: left">
+                        <input type="checkbox" id="eng">
+                        <label for="eng">English</label>
+                        <input type="checkbox" id="kan">
+                        <label for="kan">Kannada</label>
+                        <input type="checkbox" id="hin">
+                        <label for="hin">Hindi</label>
+                        <input type="checkbox" id="tel">
+                        <label for="tel">Telugu</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: left;">
+                        <input type="checkbox" checked>
+                        <label>Hereby I declare all the given details are true</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: right;">
+                        <label>
+                            Log in to <a href="https://www.ethnus.com">Ethnus</a> website
+                        </label>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <div style="text-align: center;">
+        <br>
+        <input type="submit" value="Register" id="sub">
+    </div>
+</body>
+</html>
